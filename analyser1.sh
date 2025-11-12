@@ -1,8 +1,8 @@
-#1/bin/bash
+#!/bin/bash
 for i in $(ls $1)
 do
     for j in $(cat $1$i)
     do
-        echo $j
+        echo $j | tr -d ":"
     done
 done
